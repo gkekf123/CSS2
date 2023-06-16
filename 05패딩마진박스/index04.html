@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .gnb-box {
+        text-align: center;
+        background-color: black;
+      }
+      .gnb > li {
+        display: inline-block;
+      }
+      .gnb > li > a {
+        display: block; /* 너비, 높이 지정 */
+        color: white;
+        text-decoration: none;
+        padding: 20px 30px;
+        /* 마우스 호버시 박스사이즈 잡는 방법 
+          1. height로 높이를 줘서 잡는다
+          2. box-sizing:border-box;
+        */
+        height: 65px;
+        box-sizing: border-box;
+      }
+      .gnb > li > a:hover {
+        border-bottom: 2px solid white;
+      }
+      section {
+        margin-top: 80px;
+      }
+      .box {
+        width: 1080px;
+        margin: 0 auto;
+      }
+      .box > .a1 {
+        border: 2px solid red;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="gnb-box">
+        <ul class="gnb">
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <img src="img/car.jpg" />
+    </article>
+
+    <section>
+      <div class="box">
+        <h3>오늘의 발견</h3>
+        <div class="a1">
+          ...<br />...<br />...<br />...<br />...<br />...<br />...<br />...<br />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

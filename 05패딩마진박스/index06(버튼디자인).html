@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .my-btn {
+        background-color: #03c75a;
+        padding: 20px 30px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 900;
+        border: none;
+
+        /* a태그는 인라인이기 때문에  display: block;해야 width가 적용 됨 */
+        width: 200px;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+
+        /* 마우스 오버 시 손가락 모양 */
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="my-btn">naver</a>
+    <hr />
+    <button class="my-btn">naver</button>
+  </body>
+</html>

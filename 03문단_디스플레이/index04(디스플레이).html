@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* *{
+        padding: 0;
+        margin: 0;
+      } */
+      ul,
+      li {
+        list-style: none;
+      }
+      /* ul, li는 가로배치하되 영역을 가져야 함 */
+      .gnb > li {
+        display: inline-block;
+      }
+      .gnb {
+        text-align: center; /* .gnb안 요소들은 모두 가운데로 */
+        background-color: yellow;
+      }
+      /* a태그는 인라인이므로 block지정해주고 widthm heigh적용 가능 */
+      .gnb > li > a {
+        display: block;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border: 2px solid red;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .gnb > li > a:hover {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="box">
+      <ul class="gnb">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
